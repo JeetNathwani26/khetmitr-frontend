@@ -5,7 +5,7 @@ import Adminpage from './pages/Admin/Adminpage';
 import Homes from './pages/Admin/Homes';
 import Landowner from './pages/Admin/Landownerpendding';
 import ManagerPending from './pages/Admin/Managerpendding';
-import Landhomes from './pages/Admin/landhomes';
+import Landhomes from './pages/Admin/Landhomes';
 import Registerpage from './pages/Registerpage';
 import Home from './pages/user/Home';
 import Forget from './pages/user/forget';
