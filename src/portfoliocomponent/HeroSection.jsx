@@ -1,17 +1,22 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import heroImage from "../assets/portfolio/photo/hero-bg.jpg"; // Ensure this exists
+import Loginpages from '../pages/Loginpages';
+
+
 
 const HeroSection = () => {
   const navigate = useNavigate();
-
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <section className="relative w-full min-h-screen bg-white flex items-center">
       {/* Background Image */}
       <img
         src={heroImage}
         alt="KhetMitra Background"
+        loading="lazy"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -39,7 +44,7 @@ const HeroSection = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => navigate("/login")}
+              onClick={() => setShowLogin(true)}
               className="px-5 py-3 bg-green-500 text-white font-semibold rounded-lg shadow-lg hover:bg-green-600 transition"
             >
               Join as Landowner
@@ -48,7 +53,7 @@ const HeroSection = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              onClick={() => navigate("/login")}
+              onClick={() => setShowLogin(true)}
               className="px-5 py-3 bg-white text-green-500 font-semibold rounded-lg shadow-lg border border-green-500 hover:bg-green-50 transition"
             >
               Become a Manager
@@ -63,7 +68,12 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex-1 flex justify-center lg:justify-end"
         >
-          
+                {showLogin && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 "   onClick={() => setShowLogin(false)}>
+    
+          <Loginpages />
+        </div>
+      )}
         </motion.div>
       </div>
     </section>

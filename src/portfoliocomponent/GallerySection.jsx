@@ -46,6 +46,7 @@ const GallerySection = () => {
               <img
                 src={image.src}
                 alt={`Gallery Image ${image.id}`}
+                loading="lazy"
                 className="w-full h-64 md:h-72 lg:h-80 object-cover rounded-lg"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.8 }}

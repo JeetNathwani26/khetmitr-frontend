@@ -372,7 +372,7 @@ const handleCropChange = (e) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           >
-              <div className="  flex p-7 bg-gray-100/70 drop-shadow-md backdrop-blur-lg
+              <div className="  flex p-7 bg-white drop-shadow-md backdrop-blur-lg
                    rounded-2xl m-1 flex-col gap-2  border-0 border-black
                    shadow-lg md:p-7 ">
                 <div className="flex flex-col items-center text-center">

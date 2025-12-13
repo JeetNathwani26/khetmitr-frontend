@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import Loginpages from '../pages/Loginpages';
 
 import logo from "../assets/photo/logo.png"; // your uploaded logo
 
@@ -16,7 +17,7 @@ const navLinks = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
-
+  const [showLogin, setShowLogin] = useState(false);
   return (
     <motion.nav
       initial={{ y: 0, opacity: 0 }}
@@ -66,13 +67,14 @@ const Navbar = () => {
             
             <button
               className="px-5 py-2 rounded-full bg-green-600 text-white hover:bg-green-700 transition font-semibold shadow-md"
-              onClick={()=>navigate("/login")}
+              onClick={()=>setShowLogin(true)}
             >
               Sign In
             </button>
           </div>
 
         </div>
+      
 
         {/* Mobile Menu Toggle */}
         <button
@@ -124,14 +126,26 @@ const Navbar = () => {
           {/* Mobile Buttons */}
           <button
             className="block w-11/12 mx-auto bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition shadow-md"
-            onClick={()=>navigate("/login")}
+            onClick={()=>setShowLogin(true)}
           >
             Sign In
           </button>
 
+
+
         </motion.div>
       )}
+
+                      {showLogin && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 "   onClick={() => setShowLogin(false)}>
+    
+          <Loginpages />
+        </div>
+      )}
+      
     </motion.nav>
+
+    
   );
 };
 
