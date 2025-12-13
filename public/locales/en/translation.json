@@ -1,0 +1,77 @@
+{
+  "khetMitra": "KhetMitra",
+  "welcome": "Home",
+  "about": "About Us",
+  "gallery": "Gallery",
+  "policy": "Policy",
+  "work": "Work",
+  "login": "Login",
+  "register": "Register",
+  "forgotPassword": "Forgot Password?",
+  "footerDescription": "Connecting farmers with technology for a better future.",
+  "home": "Home",
+  "allRightsReserved": "All rights reserved.",
+  
+  "heroTitle": "Welcome to KhetMitra",
+  "heroSubtitle": "Connecting farmers with modern technology for a brighter future.",
+  "heroButton": "Explore More",
+
+  "aboutTitle": "About Us",
+  "aboutDescription": "KhetMitra is a digital platform that makes land leasing in agriculture simple, safe, and transparent. Many landowners cannot farm their land due to age, jobs, or living in cities, while skilled farmers struggle to find land for cultivation.",
+
+  "galleryTitle": "Our Gallery",
+
+  "policyTitle": "Our Core Policies",
+  "policy1Title": "Data Security",
+  "policy1Description": "Your data is protected with state-of-the-art encryption and security protocols.",
+  "policy2Title": "Sustainable Farming",
+  "policy2Description": "We promote eco-friendly and sustainable practices for a healthier planet.",
+  "policy3Title": "Fair Pricing",
+  "policy3Description": "Our policies ensure transparent and fair pricing for all farmers and partners.",
+
+  "workTitle": "How It Works",
+  "role1Title": "Landowner",
+  "role1Description": "This refers to individuals who own land and allow others to cultivate it. KisanMitra offers a pathway to register your land for farming support, connecting with agricultural experts.",
+  "role2Title": "Manager",
+  "role2Description": "This role involves tasks such as starting ground, handling, comprehending productivity through careful planning and hard work. Focuses on efficient and productive management of agricultural activities.",
+  "role3Title": "Laborer",
+  "role3Description": "These individuals work with dedication. Their responsibilities include harvesting and management of the crops, indicating their direct involvement in cultivation, harvesting, and post-harvest management.",
+
+  "testimonialsTitle": "What Our Farmers Say",
+  "testimonial1Text": "KhetMitra has transformed my farming practices, making them more efficient and profitable.",
+  "testimonial1Author": "Rajesh Kumar, Farmer",
+  "testimonial2Text": "The support team is incredibly responsive and knowledgeable. They helped me solve my crop issues instantly.",
+  "testimonial2Author": "Priya Sharma, Agriculture Student",
+  "testimonial3Text": "My crop yield has increased by 30% since I started using KhetMitra's services. Highly recommended!",
+  "testimonial3Author": "Anil Patel, Farm Owner",
+
+  "loginTitle": "Sign in",
+  "loginSubtitle": "Don’t have an account? Create now",
+  "email": "E-mail",
+  "password": "Password",
+  "rememberMe": "Remember me",
+  "forgotPasswordLink": "Forgot Password?",
+  "loginButton": "Sign in",
+  "googleLogin": "Continue with Google",
+
+  "forgotPasswordTitle": "Forgot Password",
+  "enterEmail": "Enter your Email",
+  "sendOtp": "Send OTP",
+  "enterOtp": "Enter OTP",
+  "verifyOtp": "Verify OTP",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "resetPassword": "Reset Password",
+
+  "registrationSteps": [
+    "Login Credentials",
+    "Personal Info",
+    "Land Info",
+    "Upload Documents",
+    "Request Approval"
+  ],
+  "next": "Next",
+  "back": "Back",
+  "finish": "Finish",
+  "approvalInfo": "Once you click \"Finish\", your request will be sent for approval."
+}
