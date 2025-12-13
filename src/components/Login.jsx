@@ -229,7 +229,7 @@ const sign = async (e) => {
       <div className="h- md:h-[90vh] w-full flex justify-center items-center p-2 ">
         <Toaster/>
         <form
-          className=" absolute bottom-2 flex md:w-90 p-10 bg-gray-100/70 drop-shadow-md backdrop-blur-lg
+          className=" absolute  flex md:w-90 p-10 bg-gray-100/70 drop-shadow-md backdrop-blur-lg
                     rounded-2xl m-10 flex-col gap-3 border-0 border-black 
                     shadow-lg md:m-3 md:p-9 md:top-0 md:bottom-0 "
         >
