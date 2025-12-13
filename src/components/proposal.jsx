@@ -209,36 +209,39 @@ const Proposal=({ name , onClose})=>{
         }
     };
 
-    const getCropRecommendation = async () => {
+    
+  const getCropRecommendation = async () => {
+  const cropParams = {
+    N: name.N || landowner[0].N,
+    P: name.p || landowner[0].p,
+    K: name.k || landowner[0].k,
+    ph: name.ph || landowner[0].ph,
+  };
 
-        
-        try {
-            // Use soil parameters from the name prop
-            const cropParams = {
-                N: name.N || landowner[0].N,
-                P: name.p || landowner[0].p,
-                K: name.k || landowner[0].k,
-                ph: name.ph || landowner[0].ph,
-            };
+  const request = fetch(`${MODEL_URL}/predict`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(cropParams),
+  }).then(async (response) => {
+    const result = await response.json();
 
-            const response = await fetch(`${MODEL_URL}/predict`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(cropParams),
-            });
-            const result = await response.json();
-            if (response.ok) {
-                const recommended = result["Recommended Crop"];
-                setRecommendedCrop(recommended);
-                setForm(prev => ({ ...prev, crops: recommended.toLowerCase() }));
-                toast.success("Crop recommendation generated!");
-            } else {
-                toast.error("Failed to get recommendation");
-            }
-        } catch (error) {
-            toast.error("Error getting crop recommendation");
-        }
-    };
+    if (!response.ok) {
+      throw new Error("Prediction failed");
+    }
+
+    const recommended = result["Recommended Crop"];
+    setRecommendedCrop(recommended);
+    setForm((prev) => ({ ...prev, crops: recommended.toLowerCase() }));
+
+    return recommended;
+  });
+
+  toast.promise(request, {
+    loading: "Generating crop recommendation...",
+    success: "Crop recommendation generated successfully 🌱",
+    error: "Failed to get crop recommendation ❌",
+  });
+};
 
     const handleSubmit = async (e) => {
         e.preventDefault();
