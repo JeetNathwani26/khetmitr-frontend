@@ -262,7 +262,7 @@ const sign = async (e) => {
               className="border p-2 pl-11 rounded-md w-full  bg-white" 
             />
           </div>
-          <div className=" w-30 scale-73 md:w-40 md:scale-90 p-2 origin-top-left ">
+          <div className=" w-30 scale-73 md:w-50 md:scale-102 p-2 origin-top-left ">
             <ReCAPTCHA
               sitekey={import.meta.env.VITE_RECAPTCHA_SITE_KEY}
               onChange={handleCaptcha}
@@ -289,15 +289,18 @@ const sign = async (e) => {
   
 
           {/* Google Login */}
-          <div className="items-center text-center">
+          <div className="items-center text-center ">
             <p className="p-2">OR login with</p>
-            <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
-              <GoogleLogin 
-                onSuccess={handl} 
-                onError={() => console.log("Google login failed")} 
-                
-              />
-            </GoogleOAuthProvider>
+            <div className="scale-110 origin-center">
+              <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
+                <GoogleLogin 
+                  onSuccess={handl} 
+                  onError={() => console.log("Google login failed")} 
+                  
+                />
+              </GoogleOAuthProvider>
+            </div>
+
           </div>
 
           {/* Sign Up */}
