@@ -59,7 +59,7 @@ function Usernav() {
                   onClick={() => {
                     if (link.action === 'logout') {
                       localStorage.clear();
-                      navigate('/login');
+                      navigate('/');
                     } else {
                       navigate(Array.isArray(link.path) ? link.path[0] : link.path);
                     }
@@ -106,7 +106,7 @@ function Usernav() {
                 onClick={() => {
                   if (link.action === 'logout') {
                     localStorage.clear();
-                    navigate('/login');
+                    navigate('/');
                   } else {
                     navigate(Array.isArray(link.path) ? link.path[0] : link.path);
                   }
