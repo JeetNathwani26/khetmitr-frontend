@@ -193,7 +193,7 @@ const Viewpro = () => {
             </div>
           ) : (
             list.map((proposal, index) => (
-              <div key={index} className="bg-gray-100/50 shadow-md rounded-2xl p-6  ">
+              <div key={index} className="bg-gray-100/50 shadow-md rounded-2xl p-10 ">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Proposal {index + 1}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
                   <div className="flex items-center space-x-3">
@@ -278,7 +278,7 @@ const Viewpro = () => {
 
 
         {/* Tabs */}
-        <div className='h-140 md:h-90 overflow-auto scrollbar-hide p-6'>
+        <div className='h-150 md:h-90 overflow-auto scrollbar-hide p-8'>
           <div className="md:bg-gray-100/50 md:shadow-md md:rounded-full md:p-2 md:mb-8 ">
             <div className="flex justify-center space-x-4">
               <button

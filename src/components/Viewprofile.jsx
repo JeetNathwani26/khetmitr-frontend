@@ -78,7 +78,7 @@ const Viewprofile = ({ name,profile ,onClose }) => {
           <IoMdClose />
         </button>
 
-        <div className=" w-full h-120 overflow-scroll scrollbar-hide p-6">
+        <div className=" w-full h-150 overflow-scroll scrollbar-hide p-6">
           <div className="border border-gray-100 shadow-sm p-4 mb-4 rounded-lg">
             <h2 className="text-3xl font-bold text-gray-800 mb-2">{name.name.toUpperCase()}</h2>
             <p className="text-gray-600 mb-2">{name.experience}</p>
