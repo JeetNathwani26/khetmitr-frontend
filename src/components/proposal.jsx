@@ -209,7 +209,12 @@ const Proposal=({ name , onClose})=>{
         }
     };
 
+<<<<<<< HEAD
 const getCropRecommendation = async () => {
+=======
+    
+  const getCropRecommendation = async () => {
+>>>>>>> af9dbda52b8a87d6e98945b3ba4a1924e8252a88
   const cropParams = {
     N: name.N || landowner[0].N,
     P: name.p || landowner[0].p,
@@ -223,6 +228,7 @@ const getCropRecommendation = async () => {
     body: JSON.stringify(cropParams),
   }).then(async (response) => {
     const result = await response.json();
+<<<<<<< HEAD
 
     if (!response.ok) {
       throw new Error("Prediction failed");
@@ -242,6 +248,26 @@ const getCropRecommendation = async () => {
   });
 };
 
+=======
+
+    if (!response.ok) {
+      throw new Error("Prediction failed");
+    }
+
+    const recommended = result["Recommended Crop"];
+    setRecommendedCrop(recommended);
+    setForm((prev) => ({ ...prev, crops: recommended.toLowerCase() }));
+
+    return recommended;
+  });
+
+  toast.promise(request, {
+    loading: "Generating crop recommendation...",
+    success: "Crop recommendation generated successfully 🌱",
+    error: "Failed to get crop recommendation ❌",
+  });
+};
+>>>>>>> af9dbda52b8a87d6e98945b3ba4a1924e8252a88
 
     const handleSubmit = async (e) => {
         e.preventDefault();
