@@ -9,7 +9,7 @@ import Landhomes from './pages/Admin/Landhomes';
 import Registerpage from './pages/Registerpage';
 import Home from './pages/user/Home';
 import Forget from './pages/user/forget';
-import Lhome from './pages/user/lhome';
+import Lhome from './pages/user/Lhome';
 import Proposal from './components/proposal';
 import Profile from './pages/user/profile';
 import Viewproposal from './pages/user/viewproposal';
