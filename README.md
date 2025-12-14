@@ -23,24 +23,7 @@ https://khetmitr-frontend.vercel.app/
 🔐 Google OAuth Login  
 🌐 REST API Integration  
 
---------------------------------------------------
-📁 Folder Structure
---------------------------------------------------
-frontend/
-│
-├── src/
-│   ├── 📂 assets/        → Images & static resources
-│   ├── 🧩 components/    → Reusable UI components
-│   ├── 📄 pages/         → Application pages
-│   ├── 🔌 services/      → API service files
-│   ├── 🛠️ utils/         → Helper utilities
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── 🌍 public/
-├── 🔑 .env
-├── 📦 package.json
-└── ⚙️ vite.config.js
+
 
 --------------------------------------------------
 🔐 Environment Variables
@@ -91,25 +74,25 @@ https://github.com/JeetNathwani26/khetmitra-model
 📸 Screenshots
 --------------------------------------------------
 
-## 📸 Screenshots
 
-### 🚜🌾 KhetMitra
-![KhetMitra]()
 
-### 🏠 Home Page
-![Home Page](screenshot/Screenshot (52).png)
+🚜🌾 KhetMitra
+![KhetMitra](screenshot/khetmitra.png)
 
-### 🔐 Login Page
-![Login Page](khetmitra-manager/screenshot/Screenshot (51).png)
+🏠 Home Page
+![Home Page](screenshot/home.png)
 
-### 🌱 Crop Recommendation
-![Crop Recommendation](screenshots/crop.png)
+🔐 Login Page
+![Login Page](screenshot/Login.png)
 
-### 📧 Email Notification
-![Email Notification](screenshots/email.png)
+ 🌱 Crop Recommendation
+![Crop Recommendation](screenshot/proposal.png)
 
-### 📱 Responsive View
-![Responsive View](screenshots/responsive.png)
+ 📧 Email Notification
+![Email Notification](screenshot/email.png)
+
+📱 Responsive View
+![Responsive View](screenshots/mobile.png)
 
 
 
