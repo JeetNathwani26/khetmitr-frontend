@@ -27,7 +27,7 @@ function Adminnav() {
 
  const logout=()=>{
     localStorage.removeItem('userEmail');
-    navigate("/login")
+    navigate("/")
  };
 
   const links = [
