@@ -5,10 +5,10 @@ import Update from "../../components/password";
 import logo from "../../assets/photo/logo.png"
 import logo1 from '../../assets/photo/logo2.png';
 import { motion } from "motion/react";
-
+const API_URL = import.meta.env.VITE_BACKEND_URL;
 
 async function sendOtpEmail(userEmail, otp) {
-  return fetch("https://khetmitra-backend.onrender.com/sendmail", {
+  return fetch(`${API_URL}/sendmail`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
@@ -38,7 +38,7 @@ const Forget = () => {
   const [mview, setMview] = useState(false);
   const [generate, setGenerate] = useState(null);
   const [user, setUser] = useState([]);
-
+  const [close,setClose]=useState(false);
   const [otp, setOtp] = useState("");
   const [up, setUp] = useState(false);
   const [timeLeft, setTimeLeft] = useState(null);
@@ -59,7 +59,7 @@ const Forget = () => {
 
     const fetchData = async () => {
       try {
-        const res = await fetch("https://khetmitra-backend.onrender.com/get_data");
+        const res = await fetch(`${API_URL}/get_data`);
         const data = await res.json();
         const mdata = data.filter((u) => u.email === email);
         setUser(mdata);
@@ -71,6 +71,8 @@ const Forget = () => {
 
     fetchData();
   }, [email]);
+
+
 
   const handleSendOtp = async (e) => {
     e.preventDefault();

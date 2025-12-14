@@ -80,7 +80,6 @@ const Update = ({ email }) => {
 
   return (
     <div>
-      <Toaster />
       <form
         onSubmit={handleSubmit}
         className="flex flex-col sm:flex-row gap-3"
