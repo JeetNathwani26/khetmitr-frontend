@@ -69,7 +69,7 @@ const HeroSection = () => {
           className="flex-1 flex justify-center lg:justify-end"
         >
                 {showLogin && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 "   onClick={() => setShowLogin(false)}>
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 ">
     
           <Loginpages />
         </div>
