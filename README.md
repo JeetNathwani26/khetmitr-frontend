@@ -94,13 +94,13 @@ https://github.com/JeetNathwani26/khetmitra-model
 ## 📸 Screenshots
 
 ### 🚜🌾 KhetMitra
-![KhetMitra](screenshots/home.png)
+![KhetMitra]()
 
 ### 🏠 Home Page
-![Home Page](screenshots/home.png)
+![Home Page](screenshot/Screenshot (52).png)
 
 ### 🔐 Login Page
-![Login Page](screenshots/login.png)
+![Login Page](khetmitra-manager/screenshot/Screenshot (51).png)
 
 ### 🌱 Crop Recommendation
 ![Crop Recommendation](screenshots/crop.png)
