@@ -76,6 +76,7 @@ https://github.com/JeetNathwani26/khetmitra-model
 
 
 
+##
 🚜🌾 KhetMitra
 ![KhetMitra](screenshot/khetmitra.png)
 
@@ -92,7 +93,7 @@ https://github.com/JeetNathwani26/khetmitra-model
 ![Email Notification](screenshot/email.png)
 
 📱 Responsive View
-![Responsive View](screenshots/mobile.png)
+![Responsive View](screenshot/mobile.png)
 
 
 
