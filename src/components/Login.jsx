@@ -289,7 +289,7 @@ const sign = async (e) => {
   
 
           {/* Google Login */}
-          <div className="items-center text-center ">
+          <div className="items-center text-center origin-center">
             <p className="p-2">OR login with</p>
             <div className="scale-110 origin-center">
               <GoogleOAuthProvider clientId={import.meta.env.VITE_GOOGLE_CLIENT_ID}>
